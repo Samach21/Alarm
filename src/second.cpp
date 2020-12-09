@@ -10,7 +10,7 @@ int x;
 void setup() {
   Wire.begin(8);
   Wire.onReceive(receiveEvent);
-  Serial.begin(9600);
+  Serial.begin(115200);
   myservo1.attach(3);
   myservo2.attach(4);
   myservo1.write(90);
